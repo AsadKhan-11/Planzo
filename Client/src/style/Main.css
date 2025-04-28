@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.sidebar {
+  @apply flex gap-1.5 items-center p-2 rounded-[12px] transition-all duration-200;
+}
+
+.sidebar-active {
+  @apply bg-[#E0F2FE] text-[#3F8CFF];
+}
+
+.sidebar-inactive {
+  @apply text-[#64748B] hover:text-[#3F8CFF] hover:bg-[#E0F2FE];
+}
