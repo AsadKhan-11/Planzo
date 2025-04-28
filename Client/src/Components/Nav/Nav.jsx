@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="w-full h-auto fixed top-0 z-50 ">
+    <nav className="w-full h-auto  z-50 ">
       <div className="px-6 py-3 h-full mx-auto flex justify-between items-center border-b-[#CBD5E1] border-b-2 ">
         <div className="text-4xl font-bold">Planzo</div>
 
