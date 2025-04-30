@@ -4,12 +4,11 @@ import Sidebar from "../Components/Sidebar/Sidebar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex-1 flex flex-col">
+    <div className="flex flex-col h-screen">
       <Nav />
-      <div className="flex h-screen w-full">
+      <div className="flex flex-1 ">
         <Sidebar />
-
-        <main className="flex-1 overflow-y-auto ">{children}</main>
+        <main className="flex-1 overflow-x-auto">{children}</main>
       </div>
     </div>
   );

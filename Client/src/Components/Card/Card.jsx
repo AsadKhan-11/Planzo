@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Card = () => {
+const Card = (props) => {
   const [isAdding, setIsAdding] = useState(false);
   const [text, setText] = useState("");
 
@@ -10,10 +10,10 @@ const Card = () => {
 
   console.log(isAdding);
   return (
-    <div className="w-60   text-[#1F2937] ">
-      <div className="w-full h-full bg-[#FFFFFF] rounded-2xl shadow-md opacitry-10 p-2">
+    <div className="w-60 text-[#1F2937] ">
+      <div className="w-full  bg-[#FFFFFF] rounded-2xl shadow-md  p-2">
         <div className="flex justify-between items-center px-3 pb-2">
-          <h2 className="text-[18px] font-bold ">To do</h2>
+          <h2 className="text-[18px] font-bold ">{props.title}</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
