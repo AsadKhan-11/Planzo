@@ -63,7 +63,7 @@ const Card = (props) => {
                 onClick={() => {
                   setIsAdding(false);
                 }}
-                className="bg-[#3F8CFF] text-[#ffff] p-2 rounded-[8px] hover:opacity-60 cursor-pointer "
+                className="bg-[#3F8CFF]/100 backdrop-blur-sm hover:bg-[#3F8CFF]/70 text-[#ffff] p-2 rounded-[8px]  cursor-pointer "
               >
                 Add card
               </button>

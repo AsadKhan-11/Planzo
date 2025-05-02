@@ -7,7 +7,7 @@ const Dashboard = () => {
       <div className="p-6 flex gap-4.5 w-max items-start">
         <Card title="To do" />
         <Card title="Doing" />
-        <div className="flex items-center gap-1.5 font-bold cursor-pointer text-white bg-white/20 backdrop-blur-sm hover:bg-white/30 p-4 py-2 w-60 rounded-[8px]">
+        <div className="flex items-center gap-1.5 font-bold cursor-pointer text-white bg-white/20 backdrop-blur-sm hover:bg-white/30 p-4 py-2 w-60 rounded-[12px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
