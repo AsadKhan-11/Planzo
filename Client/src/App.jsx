@@ -5,6 +5,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Layout from "./Layout/Layout";
 import Dashboard from "./Screens/Dashboard";
+import Login from "./Components/Login/Login";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,13 +14,14 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/dashboard"
           element={
             <Layout>
               <Dashboard />
             </Layout>
           }
         ></Route>
+        <Route path="/login" element={<Login />}></Route>
         {/* <Route path="/settings" element={<Layout></Layout>}></Route>
         <Route path="/my-boards" element={<Layout></Layout>}></Route> */}
       </Routes>

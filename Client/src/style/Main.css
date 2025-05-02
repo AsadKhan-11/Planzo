@@ -11,3 +11,7 @@
 .sidebar-inactive {
   @apply text-[#64748B] hover:text-[#3F8CFF] hover:bg-[#E0F2FE];
 }
+
+.bg-auth-gradient {
+  background: linear-gradient(to bottom, #0b1d3c, #104da8 50%, #0b1d3c);
+}

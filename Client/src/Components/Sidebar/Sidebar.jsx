@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className="w-48 h-full border-r-2 border-r-[#CBD5E1]">
       <div className="h-auto w-full flex flex-col px-4 py-10 gap-6 text-[20px] ">
         <NavLink
-          to="/"
+          to="/dashboard"
           className={({ isActive }) =>
             `sidebar
              ${isActive ? "sidebar-active " : "sidebar-inactive"}`
