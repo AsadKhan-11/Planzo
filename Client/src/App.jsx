@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Layout from "./Layout/Layout";
 import Dashboard from "./Screens/Dashboard";
 import Login from "./Components/Login/Login";
+import Signup from "./Components/Signup/Signup";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           }
         ></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
         {/* <Route path="/settings" element={<Layout></Layout>}></Route>
         <Route path="/my-boards" element={<Layout></Layout>}></Route> */}
       </Routes>
