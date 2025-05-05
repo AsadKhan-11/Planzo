@@ -55,7 +55,7 @@ const Card = (props) => {
               type="text"
               value={text}
               onChange={(e) => setText(e.target.value)}
-              className="bg-[#eef1f5] px-3 py-2 rounded-[6px] border-2 focus:border-[#3F8CFF] outline-none "
+              className="bg-[#eef1f5] px-3 py-2 rounded-[6px] border-2 border-gray-300 focus:border-[#3F8CFF] outline-none "
             />
 
             <div className="flex gap-1.5 items-center mx-3 py-1">
@@ -63,7 +63,7 @@ const Card = (props) => {
                 onClick={() => {
                   setIsAdding(false);
                 }}
-                className="bg-[#3F8CFF]/100 backdrop-blur-sm hover:bg-[#3F8CFF]/70 text-[#ffff] p-2 rounded-[8px]  cursor-pointer "
+                className="bg-[#5c6bc0]/100 backdrop-blur-sm hover:bg-[#5c6bc0]/70 text-[#ffff] p-2 rounded-[8px]  cursor-pointer "
               >
                 Add card
               </button>

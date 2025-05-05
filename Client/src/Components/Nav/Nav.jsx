@@ -4,7 +4,7 @@ const Nav = () => {
   const [menu, setMenu] = useState(false);
   return (
     <nav className="w-full h-auto  z-50 ">
-      <div className="px-6 py-3 h-full mx-auto flex justify-between items-center border-b-[#CBD5E1] border-b-2 relative ">
+      <div className="px-6 py-3 h-full mx-auto flex justify-between items-center bg-grad border-b-[#CBD5E1] border-b-2 relative ">
         <div className="text-4xl font-bold">Planzo</div>
 
         <div className="w-[40%] px-2 h-12 bg-[#EDF2F7]  rounded-md flex items-center ">
@@ -53,7 +53,7 @@ const Nav = () => {
         <div
           className={`${
             menu ? "visible" : "hidden"
-          } w-[160px] absolute text-white bg-black/60 right-0 top-0 translate-y-[79px] -translate-x-[1px] rounded-[6px]`}
+          } w-[160px] absolute text-white bg-[#5c6bc0]/70 right-0 top-0 translate-y-[79px] -translate-x-[1px] rounded-[6px]`}
         >
           <ul className="w-full h-full flex flex-col gap-2.5 overflow-hidden">
             {["Profile", "Settings", "Help", "Logout"].map((item, index) => (

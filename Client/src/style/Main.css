@@ -5,13 +5,17 @@
 }
 
 .sidebar-active {
-  @apply bg-[#E0F2FE] text-[#3F8CFF];
+  @apply bg-[#E0F2FE] text-[#512da8];
 }
 
 .sidebar-inactive {
-  @apply text-[#64748B] hover:text-[#3F8CFF] hover:bg-[#E0F2FE];
+  @apply text-[#64748B] hover:text-[#512da8] hover:bg-[#E0F2FE];
 }
 
-.bg-auth-gradient {
-  background: linear-gradient(to bottom, #0b1d3c, #104da8 50%, #0b1d3c);
+.bg-grad {
+  @apply bg-gradient-to-r  from-[#e2e2e2]  to-[#c9d6ff];
+}
+
+.bg-grad-sec {
+  @apply bg-gradient-to-r from-[#5c6bc0]  to-[#512da8];
 }

@@ -6,7 +6,7 @@ const Home = () => {
   const [isSignup, setIsSignup] = useState(false);
 
   return (
-    <div className="w-full h-screen bg-gradient-to-r  from-[#e2e2e2]  to-[#c9d6ff] flex items-center justify-center ">
+    <div className="w-full h-screen bg-grad flex items-center justify-center ">
       <div className="relative w-[768px] max-w-full min-h-[480px] bg-white rounded-[30px] shadow-xl overflow-hidden">
         {/* Forms */}
         <div
@@ -29,7 +29,7 @@ const Home = () => {
           }`}
         >
           <div
-            className={`w-full h-full   bg-gradient-to-r from-[#5c6bc0]  to-[#512da8]
+            className={`w-full h-full bg-grad-sec
 
              text-white flex flex-col items-center justify-center text-center p-8  ${
                isSignup ? "rounded-r-[150px] " : " rounded-l-[150px] "
@@ -41,7 +41,7 @@ const Home = () => {
                 <p className="mb-6">Already have an account?</p>
                 <button
                   className="bg-transparent text-white border-2 border-white shadow-lg
-px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
+                    px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => setIsSignup(false)}
                 >
                   Sign In
@@ -53,7 +53,7 @@ px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] t
                 <p className="mb-6">Don't have an account?</p>
                 <button
                   className="bg-transparent text-white border-2 border-white shadow-lg
-px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
+                px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => setIsSignup(true)}
                 >
                   Register
