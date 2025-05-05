@@ -6,8 +6,8 @@ const Home = () => {
   const [isSignup, setIsSignup] = useState(false);
 
   return (
-    <div className="w-full h-screen bg-auth-gradient flex items-center justify-center ">
-      <div className="relative w-[768px] max-w-full min-h-[480px] bg-white rounded-[30px] shadow-lg overflow-hidden">
+    <div className="w-full h-screen bg-gradient-to-r  from-[#e2e2e2]  to-[#c9d6ff] flex items-center justify-center ">
+      <div className="relative w-[768px] max-w-full min-h-[480px] bg-white rounded-[30px] shadow-xl overflow-hidden">
         {/* Forms */}
         <div
           className={`absolute top-0 left-0 h-full w-[200%] flex transition-transform duration-700 ease-in-out ${
@@ -29,18 +29,19 @@ const Home = () => {
           }`}
         >
           <div
-            className={`w-full h-full bg-gradient-to-r from-[#3F8CFF] to-indigo-700 text-white flex flex-col items-center justify-center text-center p-8  ${
-              isSignup
-                ? "rounded-r-[150px] rounded-l-[0]"
-                : " rounded-l-[150px] rounded-r-[0]"
-            } transition-all ease-in-out duration-1000`}
+            className={`w-full h-full   bg-gradient-to-r from-[#5c6bc0]  to-[#512da8]
+
+             text-white flex flex-col items-center justify-center text-center p-8  ${
+               isSignup ? "rounded-r-[150px] " : " rounded-l-[150px] "
+             } transition-all ease-in-out duration-1000`}
           >
             {isSignup ? (
               <>
                 <h2 className="text-2xl font-bold mb-4">Welcome Back!</h2>
                 <p className="mb-6">Already have an account?</p>
                 <button
-                  className="bg-white text-indigo-600 px-6 py-2 rounded font-semibold hover:bg-gray-100 transition"
+                  className="bg-transparent text-white border-2 border-white shadow-lg
+px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => setIsSignup(false)}
                 >
                   Sign In
@@ -51,7 +52,8 @@ const Home = () => {
                 <h2 className="text-2xl font-bold mb-4">Hello, Friend!</h2>
                 <p className="mb-6">Don't have an account?</p>
                 <button
-                  className="bg-white text-indigo-600 px-6 py-2 rounded font-semibold hover:bg-gray-100 transition"
+                  className="bg-transparent text-white border-2 border-white shadow-lg
+px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => setIsSignup(true)}
                 >
                   Register
