@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 
 const Login = () => {
   return (
@@ -30,9 +31,7 @@ const Login = () => {
       >
         Forgotten Password
       </a>
-      <button className="w-full  text-white bg-[#5c6bc0] hover:bg-[#512da8] transition-all duration-200 ease-in-out font-bold py-1.5 rounded-[6px] cursor-pointer ">
-        Login
-      </button>
+      <Button text={"Login"} />
     </div>
     //   </div>
     // </div>

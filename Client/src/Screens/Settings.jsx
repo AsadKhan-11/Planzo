@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Components/Button/Button";
 
 const Settings = () => {
   const fields = [
@@ -13,7 +14,6 @@ const Settings = () => {
     <div className="w-full h-full flex justify-center items-center ">
       <div className="w-60 p-4 bg-[#eef1f5] shadow-md h-auto rounded-[10px] flex flex-col gap-3 overflow-hidden">
         <h2 className="font-bold text-[22px] py-2">Profile Settings</h2>
-
         {fields.map((inputs, index) => (
           <div key={index} className="w-full text-[#111827]">
             <label htmlFor="" className="">
@@ -25,7 +25,7 @@ const Settings = () => {
             />
           </div>
         ))}
-        <button>Save</button>
+        <Button text={"Save"} />
       </div>
     </div>
   );

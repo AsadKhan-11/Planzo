@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 
 const Signup = () => {
   return (
@@ -22,9 +23,7 @@ const Signup = () => {
         />
       </div>
 
-      <button className="w-full text-white bg-[#5c6bc0] hover:bg-[#512da8] transition-all duration-200 ease-in-out cursor-pointer font-bold py-1.5 rounded-[6px]  ">
-        Signup
-      </button>
+      <Button text={"Signup"} />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Login from "../Components/Login/Login";
 import Signup from "../Components/Signup/Signup";
+import Button from "../Components/Button/Button";
 
 const Home = () => {
   const [isSignup, setIsSignup] = useState(false);
@@ -39,25 +40,23 @@ const Home = () => {
               <>
                 <h2 className="text-2xl font-bold mb-4">Welcome Back!</h2>
                 <p className="mb-6">Already have an account?</p>
-                <button
-                  className="bg-transparent text-white border-2 border-white shadow-lg
-                    px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
-                  onClick={() => setIsSignup(false)}
-                >
-                  Sign In
-                </button>
+                <Button
+                  setIsSignup={setIsSignup}
+                  bool={false}
+                  text={"Sign In"}
+                  transparent={"transparent"}
+                />
               </>
             ) : (
               <>
                 <h2 className="text-2xl font-bold mb-4">Hello, Friend!</h2>
                 <p className="mb-6">Don't have an account?</p>
-                <button
-                  className="bg-transparent text-white border-2 border-white shadow-lg
-                px-10 py-2 rounded-[10px] font-semibold hover:bg-gray-100 hover:text-[#512da8] transition duration-300 ease-in-out cursor-pointer"
-                  onClick={() => setIsSignup(true)}
-                >
-                  Register
-                </button>
+                <Button
+                  setIsSignup={setIsSignup}
+                  bool={true}
+                  text={"Register"}
+                  transparent={"transparent"}
+                />
               </>
             )}
           </div>
