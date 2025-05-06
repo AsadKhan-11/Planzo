@@ -8,6 +8,7 @@ import Dashboard from "./Screens/Dashboard";
 import Login from "./Components/Login/Login";
 import Signup from "./Components/Signup/Signup";
 import Home from "./Screens/Home";
+import Settings from "./Screens/Settings";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,14 @@ function App() {
           element={
             <Layout>
               <Dashboard />
+            </Layout>
+          }
+        ></Route>
+        <Route
+          path="/settings"
+          element={
+            <Layout>
+              <Settings />
             </Layout>
           }
         ></Route>

@@ -8,7 +8,6 @@ const Card = (props) => {
     setIsAdding(true);
   };
 
-  console.log(isAdding);
   return (
     <div className="w-60 text-[#1F2937] ">
       <div className="w-full bg-[#eef1f5]  rounded-2xl shadow-md  p-2">
